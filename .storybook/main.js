@@ -1,9 +1,11 @@
 const path = require("path");
 
 module.exports = {
-  stories: ['../src/components/**/*.stories.js'],
+  stories: [
+    '../src/components/Textable/Text.stories.js',
+  ],
   webpackFinal: async (config, {configType}) => {
-    // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
+    // configType has a value of 'DEVELOPMENT' or 'PRODUCTION'
     config.output.path = path.resolve(__dirname, '..', 'storybook-static');
     config.resolve = {
       ...config.resolve,

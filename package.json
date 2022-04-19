@@ -9,7 +9,8 @@
     "start": "react-native start",
     "test": "jest",
     "sb": "start-storybook -p 6006",
-    "sb-build": "build-storybook"
+    "sb-build": "build-storybook",
+    "sb-loader": "node .storybook/storiesLoader.js"
   },
   "keywords": [],
   "author": "",
