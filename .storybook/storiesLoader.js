@@ -57,9 +57,6 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
-  features: {
-    storyStoreV7: true,
-  },
 };`;
 
 fs.writeFileSync(path.resolve(__dirname, 'main.js'), componentCode);

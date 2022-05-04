@@ -1,16 +1,7 @@
 module.exports = {
-  presets: [
-    ['@babel/preset-env', { targets: { node: 'current' } }],
-    '@babel/preset-react',
-    'module:metro-react-native-babel-preset',
-  ],
+  presets: ['module:metro-react-native-babel-preset'],
   plugins: [
-    [
-      'transform-inline-environment-variables',
-      {
-        include: ['NODE_ENV'],
-      },
-    ],
+    'transform-inline-environment-variables',
     [
       'module-resolver',
       {
